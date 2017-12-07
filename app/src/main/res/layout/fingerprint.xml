@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_fingerprint"
+            android:paddingBottom="5dp"
+            android:layout_centerInParent="true"
+            android:text="指纹识别中..."/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/tv">
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                />
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                />
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                />
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="20dp"
+                android:layout_height="2dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
