@@ -138,38 +138,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(fg4 != null)fragmentTransaction.hide(fg4);
     }
 
-    /*
-    public void requestHttp(View view) {
-        // 要访问的URL
-        String url="http://www.baidu.com";
-        //Volley的请求队列
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        //StringRequest实例
-        //第一个参数：请求方式GET、POST
-        //第二个参数：请求的URL
-        //第三个参数：请求成功的监听器，传递了请求结果
-        //第四个参数：请求失败的监听器，传递了失败的原因
-        StringRequest stringRequest = new StringRequest(Method.GET, url,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                     //使用获取的数据更新UI
-                       log.d(TAG, "onResponse:"+response);
-                 }},
-                new Response.ErrorListener() {
-                    @Override
-                     public void onErrorResponse(VolleyError error) {
-                        log.d(TAG, volleyError.getMessage(), error);
-                }});
-        //设置该请求的Tag
-        stringRequest.setTag("StringGET");
-        //把该请求添加到requestQueue中
-        requestQueue.add(stringRequest);
-        //requestQueue.start();
-        }*/
-
-        private void ReqeustExecute() throws Exception
-        {
+    private void ReqeustExecute() throws Exception
+    {
             Request request = new Request.Builder()
                     .url("http://192.168.43.254:8011/SSMWeb/view/hello/str.do")
                     .build();
@@ -180,6 +150,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 reponseStr =  response.body().string();
                 //reponseStr = response.message();
             }
-        }
+    }
 
 }
