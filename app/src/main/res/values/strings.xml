@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Van应用</string>
-    <string name="tab_menu_setting">设置</string>
+    <string name="tab_menu_setting">支付</string>
     <string name="tab_menu_my">指纹</string>
     <string name="tab_menu_help">请求</string>
-    <string name="tab_menu_start">开始</string>
+    <string name="tab_menu_start">游戏</string>
 </resources>

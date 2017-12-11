@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //Fragment Object
     private GameFragment fg1;
     private FingerprintFragment fg3;
-    private MyFragment fg2,fg4;
+    private MyFragment fg2;
+    private BitMapFragment fg4;
     private FragmentManager fManager;
 
     private final OkHttpClient client = new OkHttpClient();
@@ -108,8 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 setSelected();
                 txt_setting.setSelected(true);
                 if(fg4 == null){
-                    fg4 = new MyFragment();
-                    fg4.SetContent("第四个Fragment");
+                    fg4 = new BitMapFragment(this);
                     fTransaction.add(R.id.ly_content,fg4);
                 }else{
                     fTransaction.show(fg4);
